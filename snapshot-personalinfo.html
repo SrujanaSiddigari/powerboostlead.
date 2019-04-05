@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
+    <link href="css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li class="nav-header">
+                        <!-- <div class="dropdown profile-element">  -->
+
+                                <img alt="image" class="img-responsive" src="images/logo.jpg" />
+                            <a data-toggle="dropdown" class="dropdown-toggle hidden" href="#">
+                          <!-- </div> -->
+                </li>
+                <!-- <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Attorney IM</strong>
+                </span> <span class="text-muted text-xs block">Attorneyim@pbl.com  </a> -->
+           
+                <li>
+                    <a href="#"><i class="fa fa-home"></i> <span class="nav-label">Dashboard</span></a>
+                   
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">Leads</span></a>
+                </li>
+                <li>
+                    <a href="generalpayments.html"><i class="fa fa-usd"></i> <span class="nav-label">Payment</span></a>
+                    
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-phone-square"></i> <span class="nav-label">Contact us </span></a>
+                </li>         
+                <li>
+                    <a href="profile.html"><i class="fa fa-user"></i> <span class="nav-label">My Account</span> </a>
+                </li>
+            </ul>
+     
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg sidebar-content">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message">Welcome to Dashbord.</span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="image" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div>
+                                    <small class="pull-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <a href="profile.html">
+                        <i class="fa fa-user"></i>Profile
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i> Log out
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+     
+      <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-9">
+                <h2>Snapshot</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Leads</a>
+                    </li>
+                    <li>
+                            <a href="#">ActiveLeads</a>
+                    </li>
+                    <li>
+                            <a href="#">SnapshotInfo</a>
+                    </li>
+                    <li>
+                            <a href="#">Personal info</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <!--bread crumb-->
+
+        
+            <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel blank-panel">
+    
+                            <div class="panel-heading">
+                                <!-- <div class="panel-title m-b-md"><h4>Blank Panel with text tabs</h4></div> -->
+                                <div class="panel-options">
+
+                                     <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#tab-1">SnapshotInfo</a></li>
+                
+                                        <li class=""><a data-toggle="tab"  href="#tab-2">Payment</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-3">Tasks</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-4">Documents</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-5">Notes</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-6">Messages</a></li>
+                                    </ul> 
+                                
+                                </div>
+                            </div>
+    
+                            <div class="panel-body">
+    
+                                <div class="tab-content">
+                                    <div id="tab-1" class="tab-pane active">
+                                      
+                                        <ul class="nav nav-tabs subtabs">
+                                                <li class=""><a data-toggle="tab" href="#tab1">Personalinfo</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab2">EMergencies</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab3">Goals</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab4">Householdincome</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab5">Secured assets</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab6">Debt</a></li>
+                                                <li class=""><a data-toggle="tab" href="#tab7">PersonalProperty</a></li>
+                                         </ul>         
+                                    </div>
+                                   
+                                    
+                                    <div id="tab-2" class="tab-pane">
+                                        <!-- <strong>Payment tab</strong> -->
+                                       
+                                        </div>
+
+                                    <div id="tab-3" class="tab-pane">
+                                            <!-- <strong>Tasks tab</strong> -->
+                                            <ul class="nav nav-tabs subtabs">
+                                                    <li class=""><a data-toggle="tab" href="#">Active Tasks</a></li>
+                                                    <li class=""><a data-toggle="tab" href="#">Completed Tasks</a></li>
+                                                    
+                                             </ul>        
+                                            <table id="xample">
+                                                    <thead>
+                                                      <tr>
+                                                          
+                                                          <th><input type="checkbox"></th>
+                                                          <th>Tasks</th>
+                                                          <th>Action</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                      <td>
+                                                            <input type="checkbox"> 
+                                                        
+                                                      </td>
+                                                      
+                                                      <td>
+                                                         submit document copy
+                                                      </td>
+                                                      <td>
+                                                          <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                          </td>
+                                                      </tr>
+                                                      <tr>
+                                                            <td>
+                                                                    <input type="checkbox">
+                                                                   
+                                                                 </td>
+                                                                 
+                                                                 <td>
+                                                                    contactus if not received payment details
+                                                                 </td>
+                                                                 <td>
+                                                                        <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                                    </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                                <td>
+                                                                        <input type="checkbox">
+                                                                       
+                                                                     </td>
+                                                                     
+                                                                     <td>
+                                                                         check all before submit
+                                                                     </td>
+                                                                     <td>
+                                                                            <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                                        </td>
+                                                      </tr>
+                                                    
+                                                          
+                                                    
+                                                    </tbody>
+                                                  </table>
+                                        
+                                        </div>
+
+
+                                        <div id="tab-4" class="tab-pane">
+                                                <strong>Documents tab</strong>
+                                                <table id="example">
+                                                        <thead>
+                                                          <tr>
+                                                              <th>File</th>
+                                                              <th>Filename</th>
+                                                              <th>DateandTime</th>
+                                                              <th>Action</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                          <td>
+                                                              <img src="images/pdf.png" height="50px" width="50px">
+                                                          </td>
+                                                          <td>
+                                                              samplepdf.png
+                                                          </td>
+                                                          <td>
+                                                              3/12/2019
+                                                          </td>
+                                                          <td>
+                                                                <span><i id="download" class="fa fa-download" aria-hidden="true"></i></span>
+                                                                 <span><i id="delete" class="fa fa-trash" aria-hidden="true"></i></span>
+                                                          </td>
+                                                          </tr>
+                                                          <tr>
+                                                           <td>
+                                                                <img src="images/doc.png" height="50px" width="50px">
+                                                            </td>
+                                                            <td>
+                                                                sampledoc.png
+                                                            </td>
+                                                              <td>
+                                                                 8/11/2019
+                                                                </td>
+                                                                <td>
+                                                                        <span><i id="download" class="fa fa-download" aria-hidden="true"></i></span>
+                                                                         <span><i id="delete" class="fa fa-trash" aria-hidden="true"></i></span>
+                                                                  </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                               <td>
+                                                                    <img src="images/jpegimg.png" height="50px" width="50px">
+                                                                </td>
+                                                                    <td>
+                                                                        sampledoc.png
+                                                                    </td>
+                                                                      <td>
+                                                                         4/12/2019
+                                                                      </td>
+                                                                      <td>
+                                                                            <span><i id="download" class="fa fa-download" aria-hidden="true"></i></span>
+                                                                
+                                                                            <span><i id="delete" class="fa fa-trash" aria-hidden="true"></i></span>
+                                                                      </td>
+                                                          </tr>
+                                                        
+                                                              
+                                                        
+                                                        </tbody>
+                                                      </table>
+                                            </div>
+                                        
+                                            <div id="tab-5" class="tab-pane">
+                                                    <!-- <strong>Notes tab</strong> -->
+                                                    <div>
+                                                        <span id="noteshead">Notes</span>
+                                                        <textarea  style="display:inline" class="form-control" rols="30" cols="10"></textarea>
+                                                        <button style="display:inline" class="btn btn-warning"><i class="fa fa-plus" aria-hidden="true"></i>Add Notes</button>
+                                                    </div>
+                                                    <table id="sample">
+                                                            <thead>
+                                                              <tr>
+                                                                  
+                                                                  <th>Note</th>
+                                                                  <th>DateandTime</th>
+                                                                  <th>Action</th>
+                                                              </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                              <tr>
+                                                              <td>
+                                                                 Lousie i dint receive your attchment proper format 
+                                                                
+                                                              </td>
+                                                              
+                                                              <td>
+                                                                  3/12/2019 2:00Pm
+                                                              </td>
+                                                              <td>
+                                                                    <span><i id="editicn" class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                                              </td>
+                                                              </tr>
+                                                              <tr>
+                                                                    <td>
+                                                                            John lead takes time for action
+                                                                           
+                                                                         </td>
+                                                                         
+                                                                         <td>
+                                                                             8/11/2019 12:00Pm
+                                                                         </td>
+                                                                         <td>
+                                                                               <span><i id="editicn" class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                                                         </td>
+                                                                </tr>
+    
+                                                                <tr>
+                                                                        <td>
+                                                                              Den payment pending
+                                                                               
+                                                                             </td>
+                                                                             
+                                                                             <td>
+                                                                                 3/12/2019 2:00Pm
+                                                                             </td>
+                                                                             <td>
+                                                                                   <span><i id="editicn" class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                                                                             </td>
+                                                              </tr>
+                                                            
+                                                                  
+                                                            
+                                                            </tbody>
+                                                          </table>
+                                                </div>
+
+                                                <div id="tab-6" class="tab-pane">
+                                                        <strong>Messages tab</strong>
+                                                    </div>
+                             
+
+
+
+
+                                <!--end-->
+
+                                
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+
+           
+                   <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2015
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="js/plugins/flot/jquery.flot.time.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- Jvectormap -->
+    <script src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+
+    <!-- EayPIE -->
+    <script src="js/plugins/easypiechart/jquery.easypiechart.js"></script>
+
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.chart').easyPieChart({
+                barColor: '#f8ac59',
+//                scaleColor: false,
+                scaleLength: 5,
+                lineWidth: 4,
+                size: 80
+            });
+
+            $('.chart2').easyPieChart({
+                barColor: '#1c84c6',
+//                scaleColor: false,
+                scaleLength: 5,
+                lineWidth: 4,
+                size: 80
+            });
+
+            var data2 = [
+                [gd(2012, 1, 1), 7], [gd(2012, 1, 2), 6], [gd(2012, 1, 3), 4], [gd(2012, 1, 4), 8],
+                [gd(2012, 1, 5), 9], [gd(2012, 1, 6), 7], [gd(2012, 1, 7), 5], [gd(2012, 1, 8), 4],
+                [gd(2012, 1, 9), 7], [gd(2012, 1, 10), 8], [gd(2012, 1, 11), 9], [gd(2012, 1, 12), 6],
+                [gd(2012, 1, 13), 4], [gd(2012, 1, 14), 5], [gd(2012, 1, 15), 11], [gd(2012, 1, 16), 8],
+                [gd(2012, 1, 17), 8], [gd(2012, 1, 18), 11], [gd(2012, 1, 19), 11], [gd(2012, 1, 20), 6],
+                [gd(2012, 1, 21), 6], [gd(2012, 1, 22), 8], [gd(2012, 1, 23), 11], [gd(2012, 1, 24), 13],
+                [gd(2012, 1, 25), 7], [gd(2012, 1, 26), 9], [gd(2012, 1, 27), 9], [gd(2012, 1, 28), 8],
+                [gd(2012, 1, 29), 5], [gd(2012, 1, 30), 8], [gd(2012, 1, 31), 25]
+            ];
+
+            var data3 = [
+                [gd(2012, 1, 1), 800], [gd(2012, 1, 2), 500], [gd(2012, 1, 3), 600], [gd(2012, 1, 4), 700],
+                [gd(2012, 1, 5), 500], [gd(2012, 1, 6), 456], [gd(2012, 1, 7), 800], [gd(2012, 1, 8), 589],
+                [gd(2012, 1, 9), 467], [gd(2012, 1, 10), 876], [gd(2012, 1, 11), 689], [gd(2012, 1, 12), 700],
+                [gd(2012, 1, 13), 500], [gd(2012, 1, 14), 600], [gd(2012, 1, 15), 700], [gd(2012, 1, 16), 786],
+                [gd(2012, 1, 17), 345], [gd(2012, 1, 18), 888], [gd(2012, 1, 19), 888], [gd(2012, 1, 20), 888],
+                [gd(2012, 1, 21), 987], [gd(2012, 1, 22), 444], [gd(2012, 1, 23), 999], [gd(2012, 1, 24), 567],
+                [gd(2012, 1, 25), 786], [gd(2012, 1, 26), 666], [gd(2012, 1, 27), 888], [gd(2012, 1, 28), 900],
+                [gd(2012, 1, 29), 178], [gd(2012, 1, 30), 555], [gd(2012, 1, 31), 993]
+            ];
+
+
+            var dataset = [
+                {
+                    label: "Number of orders",
+                    data: data3,
+                    color: "#1ab394",
+                    bars: {
+                        show: true,
+                        align: "center",
+                        barWidth: 24 * 60 * 60 * 600,
+                        lineWidth:0
+                    }
+
+                }, {
+                    label: "Payments",
+                    data: data2,
+                    yaxis: 2,
+                    color: "#464f88",
+                    lines: {
+                        lineWidth:1,
+                            show: true,
+                            fill: true,
+                        fillColor: {
+                            colors: [{
+                                opacity: 0.2
+                            }, {
+                                opacity: 0.2
+                            }]
+                        }
+                    },
+                    splines: {
+                        show: false,
+                        tension: 0.6,
+                        lineWidth: 1,
+                        fill: 0.1
+                    },
+                }
+            ];
+
+
+            var options = {
+                xaxis: {
+                    mode: "time",
+                    tickSize: [3, "day"],
+                    tickLength: 0,
+                    axisLabel: "Date",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: 'Arial',
+                    axisLabelPadding: 10,
+                    color: "#d5d5d5"
+                },
+                yaxes: [{
+                    position: "left",
+                    max: 1070,
+                    color: "#d5d5d5",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: 'Arial',
+                    axisLabelPadding: 3
+                }, {
+                    position: "right",
+                    clolor: "#d5d5d5",
+                    axisLabelUseCanvas: true,
+                    axisLabelFontSizePixels: 12,
+                    axisLabelFontFamily: ' Arial',
+                    axisLabelPadding: 67
+                }
+                ],
+                legend: {
+                    noColumns: 1,
+                    labelBoxBorderColor: "#000000",
+                    position: "nw"
+                },
+                grid: {
+                    hoverable: false,
+                    borderWidth: 0
+                }
+            };
+
+            function gd(year, month, day) {
+                return new Date(year, month - 1, day).getTime();
+            }
+
+            var previousPoint = null, previousLabel = null;
+
+            $.plot($("#flot-dashboard-chart"), dataset, options);
+
+            var mapData = {
+                "US": 298,
+                "SA": 200,
+                "DE": 220,
+                "FR": 540,
+                "CN": 120,
+                "AU": 760,
+                "BR": 550,
+                "IN": 200,
+                "GB": 120,
+            };
+
+            $('#world-map').vectorMap({
+                map: 'world_mill_en',
+                backgroundColor: "transparent",
+                regionStyle: {
+                    initial: {
+                        fill: '#e4e4e4',
+                        "fill-opacity": 0.9,
+                        stroke: 'none',
+                        "stroke-width": 0,
+                        "stroke-opacity": 0
+                    }
+                },
+
+                series: {
+                    regions: [{
+                        values: mapData,
+                        scale: ["#1ab394", "#22d6b1"],
+                        normalizeFunction: 'polynomial'
+                    }]
+                },
+            });
+        });
+    </script>
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script>
+$(function(){
+  $("#example").dataTable();
+})
+</script>
+<script>
+        $(function(){
+          $("#sample").dataTable();
+        })
+        </script>
+        <script>
+                $(function(){
+                  $("#xample").dataTable();
+                })
+                </script>
+</body>
+</html>
