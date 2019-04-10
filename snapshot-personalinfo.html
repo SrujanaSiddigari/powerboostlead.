@@ -57,6 +57,10 @@
                 <li>
                     <a href="profile.html"><i class="fa fa-user"></i> <span class="nav-label">My Account</span> </a>
                 </li>
+                <li>
+                        <a href="calendar.html"><i class="fa fa-user"></i> <span class="nav-label">Calendar</span> </a>
+
+                </li>
             </ul>
      
     </nav>
@@ -180,7 +184,7 @@
                                         <li class=""><a data-toggle="tab" href="#tab-3">Tasks</a></li>
                                         <li class=""><a data-toggle="tab" href="#tab-4">Documents</a></li>
                                         <li class=""><a data-toggle="tab" href="#tab-5">Notes</a></li>
-                                        <li class=""><a data-toggle="tab" href="#tab-6">Messages</a></li>
+                                        <li class=""><a data-toggle="tab" href="#tab-6" id="msg-tab">Messages</a></li>
                                     </ul> 
                                 
                                 </div>
@@ -205,8 +209,78 @@
                                     
                                     <div id="tab-2" class="tab-pane">
                                         <!-- <strong>Payment tab</strong> -->
-                                       
+                                        <div id="pay-div">
+                                        <label>Amount</label>
+
+                                        <input id="amt" type="text" class="form-control" placeholder="$">
+                                        <div>
+                                        <label>Description</label>
+                                         </div>
+                                        <textarea id="txt" rols="40" cols="40" placeholder="enter Description here"></textarea>
                                         </div>
+                                        <div id="buttn">
+                                        <button id="btn1" class="btn btn-success"> Request Pay</button>                                                    
+                                        
+                                        </div>
+                                        <br>
+                                        <br>
+                                        <table id="zample">
+                                            <thead>
+                                              <tr>
+                                                  
+                                                  <th><input type="checkbox"></th>
+                                                  <th>Tasks</th>
+                                                  <th>Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                              <td>
+                                                    <input type="checkbox"> 
+                                                
+                                              </td>
+                                              
+                                              <td>
+                                                 submit document copy
+                                              </td>
+                                              <td>
+                                                  <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                    <td>
+                                                            <input type="checkbox">
+                                                           
+                                                         </td>
+                                                         
+                                                         <td>
+                                                            contactus if not received payment details
+                                                         </td>
+                                                         <td>
+                                                                <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                            </td>
+                                                </tr>
+
+                                                <tr>
+                                                        <td>
+                                                                <input type="checkbox">
+                                                               
+                                                             </td>
+                                                             
+                                                             <td>
+                                                                 check all before submit
+                                                             </td>
+                                                             <td>
+                                                                    <button class="btn btn-success"><input type="checkbox"> Done</button>                                                    
+                                                                </td>
+                                              </tr>
+                                            
+                                                  
+                                            
+                                            </tbody>
+                                          </table>
+                                                        
+                                    </div>
 
                                     <div id="tab-3" class="tab-pane">
                                             <!-- <strong>Tasks tab</strong> -->
@@ -275,7 +349,7 @@
 
 
                                         <div id="tab-4" class="tab-pane">
-                                                <strong>Documents tab</strong>
+                                                <!-- <strong>Documents tab</strong> -->
                                                 <table id="example">
                                                         <thead>
                                                           <tr>
@@ -332,7 +406,7 @@
                                                                 
                                                                             <span><i id="delete" class="fa fa-trash" aria-hidden="true"></i></span>
                                                                       </td>
-                                                          </tr>
+                                                            </tr>
                                                         
                                                               
                                                         
@@ -347,6 +421,8 @@
                                                         <textarea  style="display:inline" class="form-control" rols="30" cols="10"></textarea>
                                                         <button style="display:inline" class="btn btn-warning"><i class="fa fa-plus" aria-hidden="true"></i>Add Notes</button>
                                                     </div>
+                                                    <br>
+                                                    <br>
                                                     <table id="sample">
                                                             <thead>
                                                               <tr>
@@ -405,10 +481,248 @@
                                                 </div>
 
                                                 <div id="tab-6" class="tab-pane">
-                                                        <strong>Messages tab</strong>
-                                                    </div>
-                             
+                                                        <!-- <strong>Messages tab</strong> -->
+                                                  
+                                                            <button style="float: right" class="btn btn-primary newmsg"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp New Message</button>
+                                                            <button style="float: right" class="btn btn-danger" id="back2inbox"><i class="fa fa-long-arrow-left" aria-hidden="true"></i>&nbsp Backtoinbox</button>
+                                                            <br>
+                                                            <div class="container msgpaneldiv">
+                                                              
+                                                                    <div class="panel panel-default" id="pannel">
+                                                                        <div class="panel panel-heading">Message Panel
 
+                                                                        </div>
+
+                                                                      <div class="panel-body">
+                                                                            <div id="pay-div">
+                                                                                  
+                                                                                    <label>Subject</label>
+                                            
+                                                                                    <input id="panelamt" type="text" class="form-control" placeholder="Enter Subject">
+                                                                                    <div>
+                                                                                    <label>Message</label>
+                                                                                     </div>
+                                                                                    <textarea id="txt" rols="40" cols="40" placeholder="Enter Message here"></textarea>
+                                                                                    </div>
+                                                                                    <div>
+                                                                                    <button class="btn btn-success" id="sendmsg">Send<i id="sendarrow" class="fa fa-paper-plane-o" aria-hidden="true"></i></button>                                                    
+                                                                                    
+                                                                                    </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div> 
+                                                    
+                                                  <h3 style="color:cadetblue;margin-left: 20px;">All</h3>
+                
+                                                    <div id="maindiv">
+                                                            <button class="btn btn-error form-control" id="newer" style="text-align: left;font-weight: bold" type="button">
+                                                                                                                                        
+
+                                                              Newer
+                                                              <i id="frst" class="fa fa-caret-down"  style="margin-left:20px"></i>
+                                                            </button>
+                                                       
+                                                          <div id="firstdiv">
+                                                            <div class="msgcontent">
+                                                                Demo1
+                                                                Hi,
+                                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                            </div>
+                                                            <hr>
+                                                            <div class="msgcontent"> 
+                                                                    Demo2
+                                                                    Hello,
+                                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                              </div>
+                                                          </div>
+                                                          
+                                                          
+                                                    
+                                                                
+                                                                <button  style="text-align: left;font-weight: bold" id="older" class="btn btn-error form-control"  type="button">
+                                                                   Older
+                                                                  <i id="scnd" class="fa fa-caret-down"  style="margin-left:20px" ></i>
+                                                                  
+                                                                </button>
+                                                            
+                                                              <div id="seconddiv">
+                                                                <div class="msgcontent">
+                                                                    Demo3
+                                                                    Hi,
+                                                                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                                </div>
+                                                                <hr>
+                                                                <div class="msgcontent">
+                                                                        Demo4
+                                                                        Hello,
+                                                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                                  </div>
+                                                              </div>
+                                                              </div>
+                                                        </div>
+                                            </div>
+                                        <!--sub tabs snapshot info-->
+                                        <div class="tab-content">
+                                              <div class="tab-pane" id="tab1">
+                                                   <!-- <p>Personalinfo tab</p> -->
+                                                    <form class="m-t" role="form">
+                                                        <div class="container-fluid">
+                                                            <div class="row">
+                                                            <!--first col-->
+                                                              <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <input type="password" class="form-control" placeholder="Password" required="">
+                                                                </div>
+                                                               </div> 
+                                                                <!--first col-->
+
+                                                                <!--second col-->
+                                                                <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" class="form-control" placeholder="Password" required="">
+                                                                        </div>
+                                                                       </div> 
+
+                                                                <!--second col-->
+
+                                                                <!--third col-->
+                                                                <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <input type="password" class="form-control" placeholder="Password" required="">
+                                                                        </div>
+                                                                       </div> 
+
+                                                                <!--third col-->
+
+
+
+
+
+                                                            </div>      
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            <div class="tab-pane" id="tab2">
+                                                <!-- <p>Emergencies tab</p> -->
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div>
+                                                <input type="checkbox">&nbsp Garnishment
+                                                </div>
+                                                <div>
+                                                <input type="checkbox">&nbsp ForeClosure
+                                                </div>
+                                                <div>
+                                                <input type="checkbox">&nbsp Judgement
+                                                </div>
+                                                <div>
+                                                <input type="checkbox">&nbsp Repossession
+                                                </div>
+                                                <div>
+                                                <input type="checkbox">&nbsp Creditior Harassment
+                                                </div>
+                                            </div>
+
+
+
+                                           <div class="tab-pane" id="tab3">
+                                                    <p>Goals tab</p>
+                                            </div>
+
+
+                                            <div class="tab-pane" id="tab4">
+                                                    <!-- <p>Householdincome tab</p> -->
+                                                    <form class="m-t" role="form">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                <!--first col-->
+                                                                <h3>Debtor (Primary Source Income)</h3>
+                                                                  <div class="col-md-3">
+                                                                    <div class="form-group">
+                                                                        <label>Gross Monthly</label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                    <h3>Co-Debtor (Primary Source Income)</h3>
+                                                                    
+                                                                    <div class="form-group">
+                                                                        <label>Gross Monthly</label>
+                                                                        <input type="text" class="form-control">
+                                                                    </div>
+                                                                 
+                                                                    <div class="form-group">
+                                                                            <label>Gross Monthly</label>
+                                                                            <input type="text" class="form-control">
+                                                                        </div>
+                                                                   </div> 
+                                                                    <!--first col-->
+    
+                                                                    <!--second col-->
+                                                                    <div class="col-md-3">
+                                                                            <div class="form-group">
+                                                                                <label>Type of Income</label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label>Type of Income</label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                    <label>Type of Income</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                     </div> 
+    
+                                                                    <!--second col-->
+    
+                                                                    <!--third col-->
+                                                                    <div class="col-md-3">
+                                                                            <div class="form-group">
+                                                                                <label>Next Pay Period</label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label>Next Pay Period</label>
+                                                                                <input type="text" class="form-control">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                    <label>Next Pay Period</label>
+                                                                                    <input type="text" class="form-control">
+                                                                                </div>
+                                                                    </div> 
+    
+                                                                    <!--third col-->
+    
+    
+    
+    
+    
+                                                                </div>      
+                                                            </div>
+                                                        </form>
+
+                                            </div>
+                                                <div class="tab-pane" id="tab5">
+                                                    <p>Securedassets tab</p>
+                                                </div>
+                                                <div class="tab-pane" id="tab6">
+                                                    <p>Debt tab</p>
+                                                </div>
+                                                <div class="tab-pane" id="tab7">
+                                                    <p>PersonalProperty tab</p>
+                                                </div>
+                                            </div>
+
+                                        <!--sub tabs snapshot info-->
 
 
 
@@ -423,7 +737,8 @@
                     </div>
     
 
-           
+               <br>
+               <br>
                    <div class="footer">
             <div class="pull-right">
                 10GB of <strong>250GB</strong> Free.
@@ -637,6 +952,7 @@
             });
         });
     </script>
+
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 <script>
@@ -654,5 +970,72 @@ $(function(){
                   $("#xample").dataTable();
                 })
                 </script>
+        <script>
+            $(function(){
+              $("#zample").dataTable();
+            })
+            </script>
+        <script>
+        $(document).ready(function(){
+            // $("#seconddiv").hide();
+        $("#scnd").click(function(){
+            $("#seconddiv").toggle();
+
+        });
+    });
+        </script>
+         <script>
+                $(document).ready(function(){
+                    // $("#seconddiv").hide();
+                $("#frst").click(function(){
+                    $("#firstdiv").toggle();
+        
+                });
+            });
+                </script>
+                 <script>
+                    $(document).ready(function(){
+                        $(".msgpaneldiv").hide();
+                        $("#back2inbox").hide();
+                    $(".newmsg").click(function(){
+                        $(".msgpaneldiv").toggle();
+                        $("#maindiv").hide();
+                        $("#back2inbox").show();
+                        $(".newmsg").hide();
+                    });
+                    $("#back2inbox").click(function(){
+                        $(".newmsg").show();
+                        $("#maindiv").show();
+                        $("#back2inbox").hide();
+                    });
+                });
+    
+                    </script>
+                    <script>
+                            $(document).ready(function(){
+                            $("#back2inbox").click(function(){
+                                $("#maindiv").show();
+                                $(".msgpaneldiv").hide();
+                            });
+                        });
+                            </script>
+                    <script>
+                            $(document).ready(function(){
+                            $("#back2inbox").click(function(){
+                                $("#maindiv").show();
+                                $(".msgpaneldiv").hide();
+                            });
+
+                            $("#maindiv").hide();
+
+                            $("#msg-tab").click(function(e){
+                                e.preventDefault();
+                               // alert("hi");
+                                $("#maindiv").show();
+
+                            });
+                          
+                        });
+                            </script>
 </body>
 </html>

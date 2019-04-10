@@ -43,7 +43,7 @@ h2 {
 }
 h3 {
   font-size: 16px;
-  margin-left:-47px;
+  margin-left:-9px;
 }
 h4 {
   font-size: 14px;
@@ -73,11 +73,10 @@ h5 {
   color: #ffffff;
 }
 #tab-2{
-  margin-left:117px;
-  /* width:500px; */
-  height: 385px;
-  width:330px;
-  border-radius:20px;
+  /* margin-left:117px; */
+  height: auto;
+  /* width:330px; */
+  /* border-radius:20px; */
  
 
 }
@@ -90,7 +89,7 @@ padding-top:5px;
 text-align: center;
 } */
 #tab-2 input{
-  margin-left:10px;
+  /* margin-left:10px; */
 }
 textarea{
   margin-top:20px;
@@ -101,6 +100,9 @@ textarea{
   font-size:30px;
 
 }
+#txt{
+  height:130px;
+}
 #editicn{
   font-size: 30px;
   color:orangered;
@@ -108,6 +110,9 @@ textarea{
 #delete{
   color:red;
   font-size:30px;
+}
+#pay-div{
+  margin-left: 117px;
 }
 #delete{
   margin-left:48px;
@@ -117,15 +122,16 @@ textarea{
   color:red;
 }
 #amt{
-   margin-left:33px !important;
-  width:66%;
-  border-radius:10px;
+   margin-left:10px !important;
+  width:34%;
   height:35px; 
 }
 #btn1{
-  padding-left: 80px;
+  /* padding-left: 80px;
   padding-right:78px;
-  margin-top:10px;
+  margin-top:10px; */
+  margin-left: 117px;
+
   background:#3399ff;
 }
 #btn{
@@ -143,9 +149,12 @@ textarea{
   margin-left: 300px;
   margin-right:300px;
 }
+#btn1,#btn2{
+
+}
 #buttn{
   margin-top:10px;
-  margin-left:30px;
+  margin-left:76px;
 }
  /* #profileinfo span,label{
 padding-left: 70px;
@@ -870,7 +879,7 @@ textarea.form-control{
   border-width: 1px 0px;
   width:392px;
   position: absolute;
-  right:30%;
+  right:1%;
   top:20%;
 }
 .btn-warning:hover,
@@ -1448,6 +1457,18 @@ button.dim:active:before {
   width: 38px;
   height: 38px;
 }
+.calendarevents{
+  background-color: #ffffff;
+  width:152px;
+   margin-left: -35px !important; 
+  padding-bottom: 20px;
+}
+/* .col-md-8 calendarcontent{
+  margin-left:200px;
+} */
+.col-md-8{
+  width:81 !important;
+}
 .chat-element .well {
   border: 1px solid #e7eaec;
   box-shadow: none;
@@ -1836,6 +1857,7 @@ table.dataTable thead .sorting:after {
 .i-checks {
   padding-left: 0;
 }
+
 .form-control,
 .single-line {
   background-color: #FFFFFF;
@@ -1846,7 +1868,7 @@ table.dataTable thead .sorting:after {
   display: block;
   padding: 6px 12px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-  width: 84%;
+  width: 100%;
   font-size: 14px;
 }
 .form-control:focus,
@@ -2197,6 +2219,11 @@ table.dataTable thead .sorting:after {
 .dd-collapsed .dd-list {
   display: none;
 }
+.card header{
+  background: lightgray;
+  height:100px;
+}
+
 .dd-item,
 .dd-empty,
 .dd-placeholder {
@@ -3064,6 +3091,7 @@ ol.unstyled {
   background: white;
   border-top: 1px solid #e7eaec;
 }
+
 .footer.fixed {
   position: fixed;
   bottom: 0;
@@ -3075,6 +3103,32 @@ ol.unstyled {
   border-top: 1px solid #e7eaec;
   margin-left: 220px;
 }
+.msgcontent{
+  margin-top:10px;
+  padding-top:10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+#maindiv{
+background: #F8AC59;
+/* background:	#FF7F50; */
+box-shadow:3px 3px;
+width:876px;
+height:auto;
+}
+#newer,#older{
+  background:orangered;
+  color:white;
+}
+#frst,#scnd{
+  color:white;
+}
+#back2inbox{
+  /* position: absolute;
+  right:45%;
+  top:34%;
+  height:27px; */
+}
 body.mini-navbar .footer.fixed,
 body.body-small.mini-navbar .footer.fixed {
   margin: 0 0 0 70px;
@@ -3082,8 +3136,17 @@ body.body-small.mini-navbar .footer.fixed {
 body.fixed-sidebar.body-small.mini-navbar .footer.fixed {
   margin: 0 0 0 220px;
 }
+
 body.body-small .footer.fixed {
   margin-left: 0px;
+}
+#sendarrow{
+  transform:rotate(20deg);
+  margin-left: 3px;
+  font-size: 15px;
+}
+#sendmsg{
+  margin-left:238px;
 }
 /* PANELS */
 .page-heading {
@@ -3091,6 +3154,13 @@ body.body-small .footer.fixed {
   padding: 0px 10px 20px 10px;
   margin-left:5px;
   margin-top:13px;
+}
+#pannel{
+  width:596px;
+  height:350px;
+}
+#panelamt{
+  width:70%;
 }
 .panel-heading h1,
 .panel-heading h2 {
@@ -3333,7 +3403,7 @@ height: 48px;
   border-image: none;
   border-style: solid solid none;
   border-width: 1px 0px;
-  width:400px;
+  width:500px;
 }
 table.table-mail tr td {
   padding: 12px;
