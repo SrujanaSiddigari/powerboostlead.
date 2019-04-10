@@ -92,13 +92,16 @@ text-align: center;
   /* margin-left:10px; */
 }
 textarea{
-  margin-top:20px;
+  margin-top:12px;
   margin-left: 10px;
 }
 #download{
   color:green;
   font-size:30px;
 
+}
+.txt1,.txt2{
+  height: 80px;
 }
 #txt{
   height:130px;
@@ -167,12 +170,15 @@ padding-left: 70px;
 p{
   margin-top:100px;
 }
- h4{
+ /* h4{
   display: inline-block;
   margin-left:117px;
-}
+} */
 .inp,#tab2{
   margin-left:117px;
+}
+#tab3{
+  margin-left: 113px;
 }
 .inp{
   height:50px;

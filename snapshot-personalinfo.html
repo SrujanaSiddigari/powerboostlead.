@@ -562,51 +562,12 @@
                                                         </div>
                                             </div>
                                         <!--sub tabs snapshot info-->
-                                        <div class="tab-content">
-                                              <div class="tab-pane" id="tab1">
+                                        <div class="tab-content" id="tabs">
+                                              <div class="tab-pane active" id="tab1">
                                                    <!-- <p>Personalinfo tab</p> -->
-                                                    <form class="m-t" role="form">
-                                                        <div class="container-fluid">
-                                                            <div class="row">
-                                                            <!--first col-->
-                                                              <div class="col-md-3">
-                                                                <div class="form-group">
-                                                                    <input type="email" class="form-control" placeholder="Email Address" required="">
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <input type="password" class="form-control" placeholder="Password" required="">
-                                                                </div>
-                                                               </div>
-                                                                <!--first col-->
-
-                                                                <!--second col-->
-                                                                <div class="col-md-3">
-                                                                        <div class="form-group">
-                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <input type="password" class="form-control" placeholder="Password" required="">
-                                                                        </div>
-                                                                       </div>
-
-                                                                <!--second col-->
-
-                                                                <!--third col-->
-                                                                <div class="col-md-3">
-                                                                        <div class="form-group">
-                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <input type="password" class="form-control" placeholder="Password" required="">
-                                                                        </div>
-                                                                       </div>
-
-                                                                <!--third col-->
-
-                                                            </div>
-                                                        </div>
-                                                    </form>
                                                 </div>
+                                        
+                                  
                                             <div class="tab-pane" id="tab2">
                                                 <!-- <p>Emergencies tab</p> -->
                                                 <br>
@@ -630,10 +591,20 @@
                                             </div>
 
 
-
+                                       
                                            <div class="tab-pane" id="tab3">
-                                                    <p>Goals tab</p>
+                                                    <!-- <p>Goals tab</p> -->
+                                                    <br>
+                                                    <br>
+                                                <h4>What is the ideal outcome(What would like to accomplish/see happen)?</h4>
+                                       
+                                            <textarea class="txt1" rols="50" cols="55" placeholder="enter Something"></textarea>
+                                            
+                                                <h4>What are your financial goals?</h4>
+                                                <textarea class="txt2" rols="50" cols="55" placeholder="enter Something"></textarea>
+
                                             </div>
+                                        
 
 
                                             <div class="tab-pane" id="tab4">
@@ -641,29 +612,35 @@
                                                 <div class="container">
                                                     <form class="" role="form">
                                                       <div class="container-fluid">
+                                                          <br>
+                                                          <br>
                                                           <div class="row">
                                                             <div class="col-md-12">
                                                               <h3>Debtor (Primary Source of Income)</h2>
                                                               <div class="col-md-3">
                                                                 <div class="form-group">
+                                                                    <label>Gross Monthly</label>
                                                                     <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                 </div>
                                                               </div>
                                                             <div class="col-md-3">
+                                                            
                                                                   <div class="form-group">
+                                                                      <label>Type of Income</label>
                                                                       <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                   </div>
                                                             </div>
                                                             <div class="col-md-3">
+                                                                <label>Next Pay Period</label>
                                                                     <div class="form-group">
                                                                         <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                     </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <!-- <div class="col-md-3">
                                                                     <div class="form-group">
                                                                         <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                     </div>
-                                                            </div>
+                                                            </div> -->
                                                           </div>
                                                          </div>
                                                        </div>
@@ -673,40 +650,470 @@
                                                                <h3>Co-Debtor (Primary Source of Income)</h2>
                                                                <div class="col-md-3">
                                                                  <div class="form-group">
+                                                                     <label>Gross Monthly</label>
                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                  </div>
                                                                </div>
                                                              <div class="col-md-3">
                                                                    <div class="form-group">
+                                                                        <label>Type of Income</label>
                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                    </div>
                                                              </div>
                                                              <div class="col-md-3">
                                                                      <div class="form-group">
+                                                                         <label>Next Pay Period</label>
                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                      </div>
                                                              </div>
-                                                             <div class="col-md-3">
+                                                             <!-- <div class="col-md-3">
                                                                      <div class="form-group">
                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
                                                                      </div>
-                                                             </div>
+                                                             </div> -->
                                                            </div>
                                                           </div>
                                                         </div>
+
+                                                        <div class="container-fluid">
+                                                                <input type="checkbox">OtherIncome
+                                                                <div class="row rowhide">
+                                                                  <div class="col-md-12">
+                                                                
+                                                                    <div class="col-md-3">
+                                                                      <div class="form-group">
+                                                                          <label>Gross Monthly</label>
+                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                      </div>
+                                                                    </div>
+                                                                  <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                             <label>Type of Income</label>
+                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="col-md-3">
+                                                                          <div class="form-group">
+                                                                              <label>Next Pay Period</label>
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                  </div>
+                                                                  <!-- <div class="col-md-3">
+                                                                          <div class="form-group">
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                  </div> -->
+                                                                </div>
+                                                               </div>
+                                                               <div class="col-md-3">
+                                                                    <label>Total Income</label>
+                                                                        <div class="form-group">
+                                                                            <input type="email" class="form-control" placeholder="$Amount" required="">
+                                                                        </div>
+                                                                </div>
+                                                             </div>
                                                     </form>
                                                 </div>
-                                            </div>
+                                       
+                                        </div>
 
                                                 <div class="tab-pane" id="tab5">
                                                     <p>Securedassets tab</p>
                                                 </div>
                                                 <div class="tab-pane" id="tab6">
-                                                    <p>Debt tab</p>
+                                                    <!-- <p>Debt tab</p> -->
+                                                    <div class="container">
+                                                            <form class="" role="form">
+                                                              <div class="container-fluid">
+                                                                  
+                                                                  <div class="row">
+                                                                    <div class="col-md-12">
+                                                                     <h3>Secured</h3>
+                                                                      <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>Type</label>
+                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                        </div>
+                                                                      </div>
+                                                                    <div class="col-md-3">
+                                                                    
+                                                                          <div class="form-group">
+                                                                              <label>Amount</label>
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                    </div>
+                                                                  
+                                                                    <!-- <div class="col-md-3">
+                                                                            <div class="form-group">
+                                                                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                            </div>
+                                                                    </div> -->
+                                                                  </div>
+                                                                 </div>
+                                                               </div>
+
+                                                               <div class="container-fluid">
+                                                                  
+                                                                    <div class="row">
+                                                                      <div class="col-md-12">
+                                             
+                                                                        <div class="col-md-3">
+                                                                          <div class="form-group">
+                                                                              <label>Type</label>
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                        </div>
+                                                                      <div class="col-md-3">
+                                                                      
+                                                                            <div class="form-group">
+                                                                                <label>Amount</label>
+                                                                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                            </div>
+                                                                      </div>
+                                                                     
+                                                                      <!-- <div class="col-md-3">
+                                                                              <div class="form-group">
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                      </div> -->
+                                                                    </div>
+                                                                   </div>
+                                                                 </div>
+
+
+
+
+                                                                 <div class="container-fluid">
+                                                                  
+                                                                        <div class="row">
+                                                                          <div class="col-md-12">
+                                                                          <h3>Priority</h3>
+                                                                            <div class="col-md-3">
+                                                                              <div class="form-group">
+                                                                                  <label>Type</label>
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                            </div>
+                                                                          <div class="col-md-3">
+                                                                          
+                                                                                <div class="form-group">
+                                                                                    <label>Amount</label>
+                                                                                    <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                </div>
+                                                                          </div>
+                                                                          
+                                                                          <!-- <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                          </div> -->
+                                                                        </div>
+                                                                       </div>
+                                                                     </div>
+
+
+
+
+                                                                     <div class="container-fluid">
+                                                                  
+                                                                            <div class="row">
+                                                                              <div class="col-md-12">
+                                                     
+                                                                                <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <label>Type</label>
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                                </div>
+                                                                              <div class="col-md-3">
+                                                                              
+                                                                                    <div class="form-group">
+                                                                                        <label>Amount</label>
+                                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                    </div>
+                                                                              </div>
+                                                                             
+                                                                              <!-- <div class="col-md-3">
+                                                                                      <div class="form-group">
+                                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                      </div>
+                                                                              </div> -->
+                                                                            </div> 
+                                                                            </div>
+                                                                           </div>
+
+
+                                                                           
+                                                                 <div class="container-fluid">
+                                                                  
+                                                                        <div class="row">
+                                                                          <div class="col-md-12">
+                                                                          <h3>Unsecured</h3>
+                                                                            <div class="col-md-3">
+                                                                              <div class="form-group">
+                                                                                  <label>Type</label>
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                            </div>
+                                                                          <div class="col-md-3">
+                                                                          
+                                                                                <div class="form-group">
+                                                                                    <label>Amount</label>
+                                                                                    <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                </div>
+                                                                          </div>
+                                                                          
+                                                                          <!-- <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                          </div> -->
+                                                                        </div>
+                                                                       </div>
+                                                                     </div>
+
+
+
+
+                                                                     <div class="container-fluid">
+                                                                  
+                                                                            <div class="row">
+                                                                              <div class="col-md-12">
+                                                     
+                                                                                <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <label>Type</label>
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                                </div>
+                                                                              <div class="col-md-3">
+                                                                              
+                                                                                    <div class="form-group">
+                                                                                        <label>Amount</label>
+                                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                    </div>
+                                                                              </div>
+                                                                             
+                                                                              <!-- <div class="col-md-3">
+                                                                                      <div class="form-group">
+                                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                      </div>
+                                                                              </div> -->
+                                                                            </div> 
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                    <label>Total Income</label>
+                                                                                        <div class="form-group">
+                                                                                            <input type="email" class="form-control" placeholder="$Amount" required="">
+                                                                                        </div>
+                                                                                </div>
+                                                                           </div>
+                                                    </form>
+                                                    </div>
+                                                   <!--end of container div-->
+                                                    <!--end of debt tab-->
                                                 </div>
                                                 <div class="tab-pane" id="tab7">
-                                                    <p>PersonalProperty tab</p>
+                                                    <!-- <p>PersonalProperty tab</p> --> 
+                                                    <br>
+                                                    <br>  
+                                                    <div class="container">
+                                                            <form class="" role="form">
+                                                              <div class="container-fluid">
+                                                                  
+                                                                  <div class="row">
+                                                                    <div class="col-md-12">
+                                           
+                                                                      <div class="col-md-3">
+                                                                        <div class="form-group">
+                                                                            <label>CashAccounts</label>
+                                                                            <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                        </div>
+                                                                      </div>
+                                                                    <div class="col-md-3">
+                                                                    
+                                                                          <div class="form-group">
+                                                                              <label>Type</label>
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <label>Value</label>
+                                                                            <div class="form-group">
+                                                                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                            </div>
+                                                                    </div>
+                                                                    <!-- <div class="col-md-3">
+                                                                            <div class="form-group">
+                                                                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                            </div>
+                                                                    </div> -->
+                                                                  </div>
+                                                                 </div>
+                                                               </div>
+
+                                                               <div class="container-fluid">
+                                                                  
+                                                                    <div class="row">
+                                                                      <div class="col-md-12">
+                                             
+                                                                        <div class="col-md-3">
+                                                                          <div class="form-group">
+                                                                              <label>CashAccounts</label>
+                                                                              <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                          </div>
+                                                                        </div>
+                                                                      <div class="col-md-3">
+                                                                      
+                                                                            <div class="form-group">
+                                                                                <label>Type</label>
+                                                                                <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                            </div>
+                                                                      </div>
+                                                                      <div class="col-md-3">
+                                                                          <label>Value</label>
+                                                                              <div class="form-group">
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                      </div>
+                                                                      <!-- <div class="col-md-3">
+                                                                              <div class="form-group">
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                      </div> -->
+                                                                    </div>
+                                                                   </div>
+                                                                 </div>
+
+
+
+
+                                                                 <div class="container-fluid">
+                                                                  
+                                                                        <div class="row">
+                                                                          <div class="col-md-12">
+                                                 
+                                                                            <div class="col-md-3">
+                                                                              <div class="form-group">
+                                                                                  <label>CashAccounts</label>
+                                                                                  <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                              </div>
+                                                                            </div>
+                                                                          <div class="col-md-3">
+                                                                          
+                                                                                <div class="form-group">
+                                                                                    <label>Type</label>
+                                                                                    <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-3">
+                                                                              <label>Value</label>
+                                                                                  <div class="form-group">
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                          </div>
+                                                                          <!-- <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                          </div> -->
+                                                                        </div>
+                                                                       </div>
+                                                                     </div>
+
+
+
+
+                                                                     <div class="container-fluid">
+                                                                  
+                                                                            <div class="row">
+                                                                              <div class="col-md-12">
+                                                     
+                                                                                <div class="col-md-3">
+                                                                                  <div class="form-group">
+                                                                                      <label>Other Personal</label>
+                                                                                      <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                  </div>
+                                                                                </div>
+                                                                              <div class="col-md-3">
+                                                                              
+                                                                                    <div class="form-group">
+                                                                                        <label>Type</label>
+                                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                    </div>
+                                                                              </div>
+                                                                              <div class="col-md-3">
+                                                                                  <label>Value</label>
+                                                                                      <div class="form-group">
+                                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                      </div>
+                                                                              </div>
+                                                                              <!-- <div class="col-md-3">
+                                                                                      <div class="form-group">
+                                                                                          <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                      </div>
+                                                                              </div> -->
+                                                                              <div>
+                                                                                    <p>Do you believe you are getting tax?</p>
+                                                                                    <input id="chkb1" type="checkbox">Yes
+                                                                                    <input id="chkb2" type="checkbox">No
+                                                                              </div>
+                                                                              <div class="col-md-3" id="howmuchbx">
+                                                                                    <div class="form-group">
+                                                                                        <label>How much</label>
+                                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                        <label>When do you plan to file</label>
+                                                                                        <input type="email" class="form-control" placeholder="Email Address" required="">
+                                                                                    </div>
+                                                                            </div> 
+                                                                            </div>
+                                                                           </div>
+                                                                         </div>
+
+
+
+
+
+
+
+
+                                                    </form>
+                                                    </div>
+                                                   <!--end of container div-->
+                                                  <!--end of personal property-->  
                                                 </div>
+                                                                             
+                                                                             
+                                                                            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        
+                                        </div>
+                                         <!--end of tab-content div-->
 
 
                                         <!--sub tabs snapshot info-->
@@ -1022,7 +1429,53 @@ $(function(){
 
                             });
 
+                          $("ul.nav-tabs a").click(function(){
+                            $("#tabs").hide();
+                          });
+                        
+                            $("ul.subtabs a").click(function (e) {
+                              e.preventDefault();
+                              //alert("hi");
+                             $("#tabs").show();
+                            });
+
                         });
                             </script>
+
+                        <script>
+                        $(document).ready(function(){
+                            $(".rowhide").hide();
+                            $("#howmuchbx").hide();
+                            $('input[type="checkbox"]').click(function(){
+                              if($(this).prop("checked") == true){
+                                // alert("Checkbox is checked.");
+                                $(".rowhide").show();
+                              }
+                            
+                                  else if($(this).prop("checked") == false){
+                                //    alert("Checkbox is unchecked.");
+                                   $(".rowhide").hide();
+                                  }
+
+
+                                  if($("#chkb1").prop("checked")==true){
+                                    
+                                
+                                $("#howmuchbx").show();
+                              }
+                              if($("#chkb1").prop("checked")==false){
+                                $("#howmuchbx").hide();
+                              }
+                              else if($("#chkb2").prop("checked") == true){
+                                $("#chkb1").prop("checked", false);
+                                
+                                //    alert("Checkbox is unchecked.");
+                                $("#howmuchbx").hide();
+                                  }
+                             });
+                        });
+                        </script>
+                
+
 </body>
 </html>
